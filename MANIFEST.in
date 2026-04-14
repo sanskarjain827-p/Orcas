@@ -1,0 +1,6 @@
+include README.md
+include agent.md
+include requirements.txt
+recursive-include brain/static *
+recursive-include agents *.md
+recursive-include brain *.md

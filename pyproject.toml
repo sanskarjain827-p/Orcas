@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orcas"
+version = "0.1.0"
+description = "A multi-agent AI orchestrator with premium CLI UI."
+readme = "README.md"
+authors = [{ name = "sanskar-jain" }]
+license = { text = "Apache-2.0" }
+dependencies = [
+    "openai",
+    "python-dotenv",
+    "rich",
+    "requests",
+    "fastapi",
+    "uvicorn",
+    "psutil"
+]
+
+[project.scripts]
+orcas = "orcas_cli:main"
